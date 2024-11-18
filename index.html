@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <title>POS System</title>
+    <link rel="icon" type="image/png" href="/img/logo.jpg" style="border-radius: 100%;" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
@@ -125,23 +126,23 @@
         <form  id="customerForm" class="mt-4 ">
             <div class="form-group">
                 <label for="customerId"><i class="fas fa-id-card"></i> Customer ID:</label>
-                <input type="text" class="form-control mb-4" id="customerId" aria-describedby="emailHelp">
+                <input type="text" class="form-control mb-4" id="customer_id" aria-describedby="emailHelp">
             </div>
             <div class="form-group">
                 <label for="customerName"><i class="fas fa-user"></i> Customer Name:</label>
-                <input type="text" class="form-control mb-4" id="customerName" >
+                <input type="text" class="form-control mb-4" id="customer_name" >
             </div>
             <div class="form-group">
                 <label for="customerAddress"><i class="fas fa-map-marker-alt"></i> Customer Address:</label>
-                <input type="text" class="form-control mb-4" id="customerAddress" >
+                <input type="text" class="form-control mb-4" id="address" >
             </div>
             <div class="form-group mb-3">
                 <label for="customerEmail"><i class="fa-solid fa-envelope"></i> Customer Email:</label>
-                <input type="email" class="form-control mb-4" id="customerEmail" >
+                <input type="email" class="form-control mb-4" id="email" >
             </div>
             <div class="form-group mb-3">
                 <label for="customerMobile"><i class="fa-solid fa-mobile-screen-button"></i> Mobile Number:</label>
-                <input type="text" class="form-control mb-4" id="customerMobile" >
+                <input type="text" class="form-control mb-4" id="contact" >
             </div>
 
             <button type="button" class="btn btn-primary m-2" id="saveBtn">
@@ -196,19 +197,23 @@
         <form class="mt-4">
             <div class="form-group">
                 <label for="itemCode"><i class="fas fa-barcode "></i> Item Code:</label>
-                <input type="text" class="form-control mb-4 " id="itemCode" required>
+                <input type="text" class="form-control mb-4 " id="item_code" required>
             </div>
             <div class="form-group">
                 <label for="itemName"><i class="fas fa-tag"></i> Item Name:</label>
-                <input type="text" class="form-control mb-4" id="itemName" required>
+                <input type="text" class="form-control mb-4" id="name" required>
             </div>
             <div class="form-group">
                 <label for="itemUnitPrice"><i class="fas fa-dollar-sign"></i> Item Unit Price:</label>
-                <input type="text" class="form-control mb-4" id="itemUnitPrice" required>
+                <input type="text" class="form-control mb-4" id="unitPrice" required>
             </div>
             <div class="form-group">
                 <label for="itemQuantity"><i class="fas fa-sort-numeric-up"></i> Item Quantity:</label>
-                <input type="text" class="form-control mb-4" id="itemQuantity" required>
+                <input type="text" class="form-control mb-4" id="qty" required>
+            </div>
+            <div class="form-group">
+                <label for="description" class="form-label"><i class="bi bi-file-earmark-text"></i>Description</label>
+                <textarea class="form-control mb-4" id="description" rows="3" placeholder="Enter Description" required></textarea>
             </div>
             <button type="button" class="btn btn-primary m-2" id="saveBtn">
                 <i class="fas fa-save"></i> Save
@@ -242,18 +247,7 @@
                 </tr>
                 </thead>
                 <tbody id="itemTableBody">
-                <tr >
-                    <td>ABC123</td>
-                    <td>Sample Item</td>
-                    <td></i> 10.99</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>DEF456</td>
-                    <td>Another Item</td>
-                    <td>8.50</td>
-                    <td>2</td>
-                </tr>
+                <tr></tr>
 
                 </tbody>
             </table>
@@ -370,22 +364,7 @@
                     </tr>
                     </thead>
                     <tbody  id="addToCartTBody">
-                    <tr >
-                        <td>001</td>
-                        <td>Item 1</td>
-                        <td>$10</td>
-                        <td>5</td>
-                        <td>$50</td>
-                        <td><i class="bi bi-trash del"></i></td>
-                    </tr>
-                    <tr >
-                        <td>002</td>
-                        <td>Item 2</td>
-                        <td>$35</td>
-                        <td>3</td>
-                        <td>$105</td>
-                        <td><i class="bi bi-trash del"></i></td>
-                    </tr>
+                    <tr ></tr>
                     </tbody>
                 </table>
             </div>
