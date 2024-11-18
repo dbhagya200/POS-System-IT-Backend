@@ -1,0 +1,126 @@
+/* section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  } */
+  #navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 0 10px;
+    z-index: 10000000000;
+  }
+  section {
+    height: auto;
+  }
+  .navbar img{
+    width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+  }
+  
+  #homeSection{
+    border-radius: 10px;
+    background-color: rgb(181, 185, 185);
+    margin: 0 40px 40px 40px;
+
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item{
+    margin-left: 20px;
+  }
+  .card-header{
+    
+        font-family: "DM Serif Text", serif;
+  
+  }
+
+
+/* #navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 0 10px;
+    z-index: 10000000000;
+  }
+  section {
+    height: auto;
+  }
+  .navbar img{
+    width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+  } */
+   #customerSection{
+    border-radius: 10px;
+    background-color: rgb(181, 185, 185);
+    margin: 0 40px 40px 40px;
+
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
+  }
+  
+  .nav-item{
+    margin-left: 20px;
+  }
+  .container{
+    margin-top: 100px;
+    h2{
+
+        font-family: "DM Serif Text", serif;
+  
+    }
+  
+  }
+
+  #itemSection{
+    border-radius: 10px;
+    background-color: rgb(181, 185, 185);
+    margin: 0 40px 40px 40px;
+  }
+  
+  .nav-item{
+    margin-left: 20px;
+  }
+  
+  .container{
+    h2{
+        font-family: "DM Serif Text", serif;
+  
+    }
+  
+  }
+
+  #placeorderSection{
+    border-radius: 10px;
+    background-color: rgb(181, 185, 185);
+    margin: 0 40px 40px 40px;
+  }
+  
+  .nav-item{
+    margin-left: 20px;
+  }  
+
+  .container{
+    h2{
+        font-family: "DM Serif Text", serif;
+
+    }
+
+  }
+  #cartTitle{
+    font-family: "DM Serif Text", serif;
+
+  }
